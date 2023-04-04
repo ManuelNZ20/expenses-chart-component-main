@@ -75,7 +75,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+.inactive {
+  display: none;
+}
 .graph-month {
   height: 240px;
   flex-direction: column;
@@ -83,12 +85,25 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-
+.info-graph {
+  background-color: var(--dark-brown);
+  width: 10vw;
+  height: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+.info-graph-span {
+  font-size: calc(1rem - 11px);
+  color: var(--cream);
+  font-weight: bold;
+}
 .graph-in-month {
   width: 8vw;
   height: 40%;
   background-color: var(--soft-red);
   border-radius: 0.2em;
+  cursor: pointer;
 }
 
 .month {
@@ -167,14 +182,23 @@ body {
     width: 45px;
     transition: 3s;
   }
+  .info-graph {
+    background-color: var(--dark-brown);
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .info-graph-span {
+    font-size: calc(1rem - 5px);
+  }
   .text-info {
-    font-size: .95em;
+    font-size: 0.95em;
     transition: 3s;
   }
   .result-total {
     font-size: 2.5em;
   }
   .result-last-month {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 }
